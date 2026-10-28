@@ -1,8 +1,8 @@
-# 🚀 Projet DevOps - CI/CD Pipeline
+# Projet DevOps - CI/CD Pipeline
 
 > Projet d'intégration continue et de déploiement continu (CI/CD) avec Jenkins, GitHub Actions et Slack
 
-## 📋 Table des matières
+##  Table des matières
 
 - [À propos](#à-propos)
 - [Architecture](#architecture)
@@ -19,7 +19,7 @@
 
 ---
 
-## 📖 À propos
+##  À propos
 
 Ce projet démontre l'implémentation complète d'une chaîne CI/CD moderne utilisant :
 
@@ -29,7 +29,7 @@ Ce projet démontre l'implémentation complète d'une chaîne CI/CD moderne util
 - **Slack** pour les notifications en temps réel
 - **Java 17** comme langage de développement
 
-### 🎯 Objectifs du projet
+###  Objectifs du projet
 
 - ✅ Automatiser le processus de build et de test
 - ✅ Mettre en place un workflow Git professionnel (branches, PR, merge)
@@ -39,7 +39,7 @@ Ce projet démontre l'implémentation complète d'une chaîne CI/CD moderne util
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -69,7 +69,7 @@ Ce projet démontre l'implémentation complète d'une chaîne CI/CD moderne util
 
 ---
 
-## 🔧 Prérequis
+##  Prérequis
 
 Avant de commencer, assurez-vous d'avoir installé :
 
@@ -96,7 +96,7 @@ Avant de commencer, assurez-vous d'avoir installé :
 
 ---
 
-## 📥 Installation
+##        Installation
 
 ### 1. Cloner le repository
 
@@ -322,7 +322,7 @@ mvn clean install
 
 ---
 
-## 🔄 Pipeline CI/CD
+## Pipeline CI/CD
 
 ### Stages du pipeline Jenkins
 
@@ -440,7 +440,7 @@ post {
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 ### Structure des tests
 
@@ -510,7 +510,7 @@ mvn test -X
 
 ---
 
-## 📦 Déploiement
+##  Déploiement
 
 ### Déploiement local
 
@@ -550,13 +550,13 @@ rsync -avz target/pipeline-demo-1.0-SNAPSHOT.jar user@server:/path/to/deploy/
 
 ---
 
-## 🔔 Notifications
+##  Notifications
 
 ### Types de notifications Slack
 
 Le projet envoie deux types de notifications :
 
-#### ✅ Notification de succès
+####  Notification de succès
 ```
 ✅ Pipeline Jenkins SUCCÈS : Build, Tests & Deploy OK
 
@@ -566,7 +566,7 @@ Duration: 14s
 Status: SUCCESS
 ```
 
-#### ❌ Notification d'échec
+####  Notification d'échec
 ```
 ❌ Pipeline Jenkins ÉCHEC : Vérifier les logs
 
@@ -601,7 +601,7 @@ post {
 
 ---
 
-## 🤝 Contribuer
+##  Contribuer
 
 Les contributions sont les bienvenues ! Voici comment contribuer :
 
@@ -645,7 +645,7 @@ Utilisez les préfixes suivants :
 
 ---
 
-## 📊 Statistiques du projet
+## Statistiques du projet
 
 ### Builds
 
@@ -683,7 +683,7 @@ Utilisez les préfixes suivants :
 
 ---
 
-## 📚 Ressources utiles
+##  Ressources utiles
 
 - [Documentation Jenkins](https://www.jenkins.io/doc/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
@@ -693,7 +693,7 @@ Utilisez les préfixes suivants :
 
 ---
 
-## 🐛 Problèmes connus
+##  Problèmes connus
 
 ### Problème : Branch master inexistante
 **Solution :** Utiliser `*/main` dans la configuration Jenkins
