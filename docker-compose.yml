@@ -1,0 +1,5 @@
+services:
+  app:
+    build: .
+    image: pipeline-demo:latest
+    container_name: pipeline-demo
