@@ -22,6 +22,13 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+          cache: maven
 
-      - name: Build project
-        run: echo "Bonjour et bon courage dans votre projet en DevOps"
+      - name: Build et tests Maven
+        run: mvn -B clean package
+
+      - name: Executer l'application
+        run: java -jar target/pipeline-demo-1.0-SNAPSHOT.jar
+
+      - name: Construire l'image Docker
+        run: docker build -t pipeline-demo:ci .
